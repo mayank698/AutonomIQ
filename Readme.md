@@ -59,8 +59,8 @@ Analyze stock market data for:
 1. **Clone the repository**
 
 ```bash
-git clone <repository-url>
-cd <project-directory>
+git clone https://github.com/mayank698/AutonomIQ
+cd automation_main
 ```
 
 2. **Create and activate virtual environment using UV**
@@ -119,12 +119,6 @@ python manage.py runserver
 ```
 
 2. **Start Celery worker** (in a separate terminal)
-
-```bash
-celery -A automation_main worker -l info --pool=solo
-```
-
-3. **Start Celery Beat** (optional, for scheduled tasks)
 
 ```bash
 celery -A automation_main worker -l info --pool=solo
